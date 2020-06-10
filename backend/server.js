@@ -32,7 +32,7 @@ app.use('/', express.static(path.join(__dirname, 'dist/mean-stack-crud-app')));
 app.use('/api', employeeRoute)
 //import Register and Auth
 const authRouter=require('../backend/routes/Auth');
-app.use('/api/user',authRouter);
+app.use('/api',authRouter);
 
 // Create port
 const port = process.env.PORT || 4000;
